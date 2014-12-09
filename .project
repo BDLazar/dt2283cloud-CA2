@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>PictureBox</name>
+=======
+	<name>Picture Box</name>
+>>>>>>> 57cfea99e6b188a980d24148aa01d895e273165d
 	<comment></comment>
 	<projects>
 	</projects>
