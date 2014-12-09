@@ -3,12 +3,10 @@ package iemyditlazarbiancadenise;
 import java.io.IOException;
 import java.util.Date;
 import java.util.Map;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import com.google.appengine.api.blobstore.BlobInfoFactory;
 import com.google.appengine.api.blobstore.BlobKey;
 import com.google.appengine.api.blobstore.BlobstoreService;
@@ -44,7 +42,7 @@ public class Upload extends HttpServlet
 		
 		else
 		{
-			/*ImagesService ImageServiceObject = ImagesServiceFactory.getImagesService(); 
+			ImagesService ImageServiceObject = ImagesServiceFactory.getImagesService(); 
 			DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
 	        UserService userService = UserServiceFactory.getUserService();
 	        User user = userService.getCurrentUser(); 
@@ -66,10 +64,8 @@ public class Upload extends HttpServlet
 			UploadImageEntity.setProperty("user", user);
 			
 			datastore.put(UploadImageEntity);
-			resp.sendRedirect(viewImages);*/
+			resp.sendRedirect(viewImages);
 			
-			resp.sendRedirect("/serve?blob-key=" + blobKey.getKeyString()); // redirect so that user is left on index.jsp when file is uploaded
-		
 			
 		}
 	}
